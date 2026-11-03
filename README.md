@@ -34,6 +34,21 @@ Stack.h - Contains the custom template-based Stack class, which manages elements
 3. Run Stack Demonstration
 4. Exit the Application
 
+* Limitations
+-Negative numbers and unary operators are not supported.
+-Decimal input numbers are not supported.
+-Exponents are not supported.
+-Implicit multiplication is not supported.
+-Only nonnegative integer operands are accepted.
+
+* Algorithm Explanation
+The program uses the Last In, First Out (LIFO) principle. During bracket checking, opening brackets are pushed into the stack, while closing brackets pop and check their matching opening brackets. During infix-to-postfix conversion, operators are temporarily stored in a stack according to their precedence and associativity. During postfix evaluation, operands are pushed into a stack. When an operator is encountered, the required operands are popped, calculated, and the result is pushed back.
+
+* Compilation and Execution
+Compiler: C++17
+IDE: Code::Blocks
+Files: main.cpp, Stack.h
+
 * Testing and Validation
 The program was tested using the test cases provided in the laboratory activity and three additional test cases created by the group.
 Testing covered:
